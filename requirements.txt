@@ -1,0 +1,9 @@
+beautifulsoup4==4.12.2
+docx==0.2.4
+openai==1.4.0
+python_docx==0.8.11
+python_pptx==0.6.21
+Requests==2.31.0
+streamlit==1.27.0
+streamlit_option_menu==0.3.6
+fitz
