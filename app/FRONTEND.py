@@ -9,7 +9,7 @@ import streamlit as st
 import fitz
 from operator import itemgetter
 import re
-
+from copy import deepcopy
 
 def fonts(doc, granularity=False):
     """Extracts fonts and their usage in PDF documents.
@@ -188,7 +188,7 @@ def extract_text_from_PDF(pdf_file,uploaded_file_name):
 st.title("Testing app service")
 
 uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
-uploaded_file_copy = copy.deepcopy(uploaded_file)
+uploaded_file_copy = deepcopy(uploaded_file)
 
 if uploaded_file:
     text_out=extract_text_from_PDF(uploaded_file,"test1")
